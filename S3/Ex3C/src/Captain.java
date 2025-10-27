@@ -1,25 +1,19 @@
-public class Captain implements BattleShip {
-
-  private BattleShip battleship;
-
-  public Captain() {
-
-  }
+public class Captain extends BattleShipDecorator {
 
   public Captain(BattleShip battleship) {
-    this.battleship = battleship;
+    super(battleship);
   }
 
   @Override
   public void fire() {
 	System.out.print("Captain's order : ");
-    battleship.fire();
+    super.fire();
   }
 
   @Override
   public void move(Distance distance) {
     System.out.print("Captain's order : ");
-    battleship.move(distance);
+    super.move(distance);
   }
 
 }
