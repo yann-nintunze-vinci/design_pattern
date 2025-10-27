@@ -1,0 +1,10 @@
+Nom du pattern: Decorator
+
+Participants théoriques		Noms utilisés dans le code
+	Component			Boisson
+	Concrete Component		Dessert, Moka, Décaféiné
+	Decorator			Additifs
+	Concrete Decorator		Sucre, Lait, Crème
+
+Nom théorique des méthodes	Nom utilisé dans le code
+	operation()			prix() et getNom()

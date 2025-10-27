@@ -1,0 +1,9 @@
+Bonjour tout le monde
+Ceci est un petit texte pour tester l'analyseur
+belgique est un mot important ici
+radar est un palindrome connu
+Une autre ligne avec belgique dedans
+kayak est aussi un palindrome amusant
+Encore une ligne simple
+belgique encore une fois
+fin
