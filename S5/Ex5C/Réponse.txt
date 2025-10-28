@@ -1,0 +1,48 @@
+Nom du Pattern : Composite
+Participants théoriques 		Noms utilisés dans le code
+	IComponent				Partie
+	Composite				Groupe
+	Leaf					Valeur
+
+Nom théorique des méthodes 		Nom utilisé dans le code
+	operation()			demande(), getNiveau()
+
+Nom du Pattern : Iterator
+Participants théoriques 		Noms utilisés dans le code
+	Aggregate				Groupe
+	Iterator				Iterator
+
+Nom théorique des méthodes 		Nom utilisé dans le code
+	iterator()				getParties()
+
+Nom du Pattern : Visitor
+Participants théoriques 		Noms utilisés dans le code
+	Visitor					Traitement
+	ConcreteVisitor				Listeur, Totaliseur, ListeurNom
+	Element					Partie
+	ConcreteElement				Valeur, Groupe
+	Client					Main
+
+Nom théorique des méthodes 		Nom utilisé dans le code
+	visit(ConcreteElement)			traiteValeur(Valeur), traiteGroupe(Groupe)
+	accept(Visitor)				demande(Traitement)
+
+Nom du Pattern : Builder
+Participants théoriques 		Noms utilisés dans le code
+	ConcreteBuilder				Fabriquant
+	Product					Partie
+
+Nom théorique des méthodes 		Nom utilisé dans le code
+	buildPart()				construireGroupe(), fermerGroupe(), construireValeur()
+	getResult(): Product			getResultat(): Partie
+
+Nom du Pattern : Factory Method
+Participants théoriques 		Noms utilisés dans le code
+	ConcreteCreator				Fabriquant
+	ConcreteProduct				Valeur, Groupe
+	Product					Partie
+
+Nom théorique des méthodes 		Nom utilisé dans le code
+	FactoryMethod()				construireGroupe(), construireValeur()
+						car on instancie bien Valeur et Groupe dans une methode
+

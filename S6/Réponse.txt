@@ -1,0 +1,41 @@
+Nom du Pattern : Singleton
+Participants théoriques 		Noms utilisés dans le code
+	Singleton				EstVivante, EstMorte
+Nom théorique des méthodes 		Nom utilisé dans le code
+	getInstance(): Singleton		getInstance(): EstVivante, EstMorte
+
+Nom du Pattern : Command
+Participants théoriques 		Noms utilisés dans le code
+	Command					Activite
+	ConcreteCommand				Vit, Meurt
+	Receiver				Cellule
+Nom théorique des méthodes 		Nom utilisé dans le code
+	execute()				activer()
+
+Nom du Pattern : Observer
+Participants théoriques 		Noms utilisés dans le code
+	Observer				Espion
+	Subject					JeuDeLaVie
+Nom théorique des méthodes 		Nom utilisé dans le code
+	update()				utiliserRenseignements()
+	registerObserver(observer)		attacher(espion)
+	unregisterObserver(observer)		detacher(espion)
+	notifyObservers()			prevenirEspions()
+
+Nom du Pattern : Strategy
+Participants théoriques 		Noms utilisés dans le code
+	Strategy				Parcourir
+	ConcreteStrategyA			ParcourtNormal
+	ConcreteStrategyB			ParcourtFort
+	Context					EstVivante, EstMorte
+Nom théorique des méthodes 		Nom utilisé dans le code
+	execute()				parcourtCelluleVivante(), parcourtCelluleMorte()
+
+Nom du Pattern : State
+Participants théoriques 		Noms utilisés dans le code
+	State					Situation
+	ConcreteStateA				EstVivante
+	ConcreteStateB				EstMorte
+	Context					Cellule
+Nom théorique des méthodes 		Nom utilisé dans le code
+	handle()				vit(), meurt(), toggle()
