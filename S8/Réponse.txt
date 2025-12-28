@@ -1,0 +1,36 @@
+Pattern 1: CoR
+Participants théoriques :		Noms utilisés dans le code :
+Handler					Generateur
+ConcreteHandlers			GenerateurAmEx, GenerateurVisa,...
+
+Nom théorique des méthodes :		Nom utilisé dans le code :
+HandleRequest()				creerCarte()
+
+Pattern 2: Factory Method
+Participants théoriques :		Noms utilisés dans le code :
+Product					CarteDeCredit
+ConcreteProduct				AmEx, Visa, MasterCard,...
+Creator					Generateur
+ConcreteCreator				GenerateurAmEx, GenerateurVisa, ...
+
+Nom théoriques des méthodes :		Nom utilisé dans le code :
+FactoryMethod()				doCreer()
+
+BONUS
+Pattern 3: Strategy
+Participants théoriques :		Noms utilisés dans le code :
+Context					Generateur
+Strategy				Validateur
+ConcreteStrategies			ValidateurAmEx, ValidateurVisa, ValidateurMasterCard,...
+
+Nom théoriques des méthodes :		Nom utilisé dans le code :
+AlgorithmInterface()			estValide()
+ContextInterface()			creerCarte()
+
+Pattern 4: Facade
+Participants théoriques :		Noms utilisés dans le code :
+Facade					Facade
+ComplicatedClasses			les validateurs + chaine de générateurs (concrets)
+
+Nom théoriques des méthodes :		Nom utilisé dans le code :
+do()					creerCarte()
